@@ -1,0 +1,137 @@
+
+
+/*전 페이지 공통*/
+.display_flex{
+    display: flex;
+}
+.flex_wrap{
+    flex-wrap: wrap;
+}
+.flex_nowrap{
+    flex-wrap: nowrap;
+}
+.flex_start{
+    justify-content: flex-start;
+}
+.flex_center{
+    justify-content: center;
+}
+.flex_end{
+    justify-content: flex-end;
+}
+.flex_between{
+    justify-content: space-between;
+}
+.flex_around{
+    justify-content: space-around;
+}
+.flex_align_s{
+    align-items: flex-start;
+}
+.flex_align_c{
+    align-items: center;
+}
+.flex_align_e{
+    align-items: flex-end;
+}
+.flex_align_str{
+    align-items: stretch;
+}
+.flex_dir_column{
+    flex-direction: column;
+}
+input,
+textarea{
+    cursor: text;
+    resize: none;
+}
+select,
+select option,
+button,
+button *,
+a img,
+a p,
+a{
+    cursor: pointer;
+}
+button,
+img{
+    display: inline-block;
+}
+button[disabled]{
+    cursor: default;
+    background-color: #999!important;
+}
+input,
+textarea,
+button,
+select,
+a,
+label{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+select::-ms-expand { 
+	display: none;
+}
+select {
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/* input search */
+input::-ms-clear,
+input::-ms-reveal{
+	display:none;width:0;height:0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	-webkit-appearance: none;
+    background: url('/assets/img/icon/delete_icon_wh.svg') center center no-repeat;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #C8C8C8;
+}
+
+* a {
+    color: #191919;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.main_section {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+}
+
+
+
+/* top button */
+.scroll_top {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 11;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.16);
+    visibility: hidden;
+}
+
+.top_position {
+    bottom: 120px;
+}
+
+.on_top {
+    visibility: visible;
+}
+
+

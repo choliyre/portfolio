@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon">
+    <title>iy-re portflio</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
+    <header class="header">
+        <div class="inner display_flex flex_between flex_align_c">
+            <h1>
+                <a href="html/index.html">iy-re Potflio</a>
+            </h1>
+            <nav class="content">
+                <button type="button" class="mobile mobile_menu">
+                    <img src="assets/icon/ico_menu.svg" alt="">
+                </button>
+                <div class="mobile mobile_bg"></div>
+                <ul class="menu">
+                    <li class="mobile mobile_close">
+                        <img src="assets/icon/ico_close.svg" alt="">
+                    </li>
+                    <li id="navAbout">ABOUT ME</li>
+                    <li id="navSkill">SKILL</li>
+                    <li id="navWork">WORK</li>
+                    <li id="navContact">CONTACT</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="index_whole">
+        <section class="main_section">
+            <img src="assets/img/index_main_img.png" alt="html 코드 이미지">
+            <div class="bg_color">
+                <div class="text">
+                    <h3 id="topText"></h3>
+                    <p>UIUX 디자인, 퍼블리싱 하는 3년차 최이레입니다 :&#41;</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content_section content_1" id="content1">
+            <div class="about_warp">
+                <div class="my_img"  data-aos="fade-up">
+                    <img src="assets/img/my_photo.png" alt="my_photo">
+                </div>
+                <div class="about_me" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/img/camera.png" alt="카메라 이미지" class="deco_1">
+                    <img src="assets/img/eucalyptus.png" alt="유칼립투스 이미지" class="deco_2">
+                    <h4>ABOUT ME</h4>
+                    <p>퍼블리셔로서 3년간 다양한 웹사이트와 프로젝트를 경험하며, 특히 반응형 웹 구축에 강점을 쌓았습니다.
+                        JavaScript와 인터랙션 구현 역량도 지속적으로 키워가며, 퍼블리싱을 넘어 프론트엔드 개발자로 한 걸음씩 
+                        성장하고 있습니다.
+                        <br/><br/>
+                        맡은 일에 애정을 가지고 책임감 있게 임하며, 새로운 기술과 변화도 두려워하지 않고 즐겁게 받아들이려 합니다.
+                        <br/><br/>
+                        빠르게 변화하는 웹 환경 속에서 최신 라이브러리와 퍼블리싱 기법을 능동적으로 활용하며, 
+                        더 나은 사용자 경험을 제공하는 퍼블리셔가 되는 것을 목표로<br/>
+                        앞으로도 다양한 경험을 토대로 넓은 시야를 갖춘 웹 전문가로 성장해 나가고자 합니다.</p>
+                </div>
+            </div>
+            <div class="career_warp" >
+                <div class="" data-aos="fade-up" data-aos-delay="150">
+                    <h4>RESUME</h4>
+                    <div class="resume_text">
+                        <p class="day_text">2025.06 ~</p>
+                        <div class="resume_inner display_flex flex_wrap flex_start flex_align_c">
+                            <p class="text1">주식회사 코니크</p>
+                            <p class="text2">웹앱 디자인 및 퍼블리싱</p>
+                        </div>
+                    </div>
+                    <div class="resume_text">
+                        <p class="day_text">2025.01 ~ 2025.04</p>
+                        <div class="resume_inner display_flex flex_wrap flex_start flex_align_c">
+                            <p class="text1">케이에스오토플랜</p>
+                            <p class="text2">웹 디자인 및 퍼블리싱</p>
+                        </div>
+                    </div>
+                    <div class="resume_text">
+                        <p class="day_text">2022.02 ~ 2024.07</p>
+                        <div class="resume_inner display_flex flex_wrap flex_start flex_align_c">
+                            <p class="text1">데일리레보라토리</p>
+                            <p class="text2">웹앱 디자인 및 퍼블리싱</p>
+                        </div>
+                    </div>
+                    <div class="resume_text">
+                        <p class="day_text">2021.06 ~ 2021.12</p>
+                        <div class="resume_inner display_flex flex_wrap flex_start flex_align_c">
+                            <p class="text1">코코넛</p>
+                            <p class="text2">웹앱 디자인 및 퍼블리싱</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="" data-aos="fade-up" data-aos-delay="200">
+                    <h4>EDUCATION</h4>
+                    <div class="education_text">
+                        <p class="day_text">2021.01 ~ 2021.06</p>
+                        <div class="education_inner display_flex flex_start flex_align_c">
+                            <p class="text1">그린컴퓨터아트학원</p>
+                            <p class="text2">UI/UX 반응형 웹디자인 & 웹퍼블리셔 실무전문과정 수료</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/fluff.png" alt="민들래 이미지" class="deco_3">
+        </section>
+
+        <section class="content_section content_2" id="content2">
+            <h4>SKILL</h4>
+            <div class="inner">
+                <div class="design" data-aos="fade-up">
+                    <p class="skill_title">Design</p>
+                    <p>포토샵과 일러스트레이터를 활용한 디자인 및 편집 작업이 가능하며,<br/>
+                        프리미어 프로를 사용해 간단한 영상 편집도 수행할 수 있습니다.<br/>
+                        주로 Adobe XD를 사용해왔고, Figma를 활용한 UI 디자인 경험도 있습니다. <br/>
+                    </p>
+                    <div class="skill_icon">
+                        <img src="assets/img/skill_icon_1.png" alt="어도비 포토샵 아이콘">
+                        <img src="assets/img/skill_icon_2.png" alt="어도비 일러스트 아이콘">
+                        <img src="assets/img/skill_icon_3.png" alt="어도비 XD 아이콘">
+                        <img src="assets/img/skill_icon_4.png" alt="어도비 프리미어프로 아이콘">
+                        <img src="assets/img/skill_icon_6.png" alt="피그마 아이콘">
+                    </div>
+                </div>
+                <div class="publishing" data-aos="fade-up" data-aos-delay="100">
+                    <p class="skill_title">Publishing</p>
+                    <p>웹 표준과 웹 접근성을 고려하여, 다양한 브라우저 환경에 맞는 
+                        크로스 브라우징 마크업을 작성합니다. <br/>
+                        주로 웹 애플리케이션 및 반응형 웹 프로젝트를 수행하며, 반응형 레이아웃에 
+                        대한 이해도가 높습니다.<br/>
+                        최근에는 React를 활용한 프론트엔드 개발을 학습하고 있습니다.
+                    </p>
+                    <div class="skill_icon">
+                        <img src="assets/img/skill_icon_7.png" alt="HTML 아이콘">
+                        <img src="assets/img/skill_icon_8.png" alt="css 아이콘">
+                        <img src="assets/img/skill_icon_9.png" alt="javascript 아이콘">
+                        <img src="assets/img/skill_icon_10.png" alt="jQuery 아이콘">
+                        <img src="assets/img/skill_icon_11.png" alt="SCSS 아이콘">
+                        <img src="assets/img/skill_icon_12.png" alt="react 아이콘">
+                    </div>
+                </div>
+                <div class="tool" data-aos="fade-up" data-aos-delay="150">
+                    <p class="skill_title">Tool</p>
+                    <p>VSCode를 주 개발 환경으로 사용하며, GitHub를 통한 협업 및 버전 
+                        관리에 익숙합니다. <br/>
+                        Eclipse, IntelliJ, Docker, FileZilla 등 다양한 개발 도구를 프로젝트에 
+                        맞게 활용한 경험이 있습니다. <br/>
+                    </p>
+                    <div class="skill_icon">
+                        <img src="assets/img/skill_icon_13.png" alt="VSCode 아이콘">
+                        <img src="assets/img/skill_icon_14.png" alt="github 아이콘">
+                    </div>
+                </div>
+                <img src="assets/img/sunflower.png" alt="해바라지 이미지" class="deco_4">
+            </div>
+        </section>
+        
+        <section class="content_section content_3" id="content3">
+            <div class="inner">
+                <h4>WORK</h4>
+                <p>참여했던 프로젝트 작업물 입니다.</p>
+                <div class="swiper mySwiper" data-aos="fade-left">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="work_img app_logo">
+                                    <img src="assets/img/project_img_3.png" alt="데일리피싱 로고">
+                                </div>
+                                <div class="txt">
+                                    <h5>데일리피싱</h5>
+                                    <span>낚시 금지구역 표시(어플)</span>
+                                    <div class="display_flex flex_align_c">
+                                        <span>기여도</span>
+                                        <p>#퍼블리싱 70%</p>
+                                    </div>
+                                </div>
+                                <a href="https://play.google.com/store/apps/details?id=net.dailylaboratory.fishing&hl=ko" target="_blank">
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="work_img">
+                                    <img src="assets/img/project_img_4.png" alt="데일리레보라토리 이미지">
+                                </div>
+                                <div class="txt">
+                                    <h5>데일리레보라토리</h5>
+                                    <span>자사 홈페이지 퍼블리싱(반응형)</span>
+                                    <div class="display_flex flex_align_c">
+                                        <span>기여도</span>
+                                        <p>#퍼블리싱 100%</p>
+                                    </div>
+                                </div>
+                                <a href="https://dailylaboratory.net/" target="_blank">
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="work_img">
+                                    <img src="assets/img/project_img_5.png" alt="리딩엠 이미지">
+                                </div>
+                                <div class="txt">
+                                    <h5>리딩엠</h5>
+                                    <span>독서와 글쓰기 학습관리 사이트(반응형)</span>
+                                    <div class="display_flex flex_align_s">
+                                        <span>기여도</span>
+                                        <p>#퍼블리싱 70%(상담등록, 헤더 제외)</p>
+                                    </div>
+                                </div>
+                                <a href="https://www.readingm.com/" target="_blank">
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="work_img">
+                                    <img src="assets/img/project_img_6.png" alt="h중고차수출 이미지">
+                                </div>
+                                <div class="txt">
+                                    <h5>H중고차수출</h5>
+                                    <span>중고차수출 사이트(반응형)</span>
+                                    <div class="display_flex flex_align_c">
+                                        <span>기여도</span>
+                                        <p>#퍼블리싱 100%</p>
+                                    </div>
+                                </div>
+                                <a href="https://h-trading.co.kr/" target="_blank">
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="work_img">
+                                    <img src="assets/img/project_img_7.png" alt="카앤캐쉬 이미지">
+                                </div>
+                                <div class="txt">
+                                    <h5>카앤캐쉬</h5>
+                                    <span>차량 승계 사이트(반응형)</span>
+                                    <div class="display_flex flex_align_c">
+                                        <span>기여도</span>
+                                        <p>#퍼블리싱 80% #디자인 70%</p>
+                                    </div>
+                                </div>
+                                <a href="https://xn--os4b97c3wlid.com/" target="_blank">
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-buttons">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="content_section content_4 display_flex flex_start flex_align_c" id="content4">
+            <div class="">
+                <h3 data-aos="fade-left">저의 포트폴리오를 읽어주셔서 감사합니다 :&#41;</h3>
+                <p data-aos="fade-left" data-aos-delay="100">dlfp0623@naver.com</p>
+                <span data-aos="fade-left" data-aos-delay="150">저에게 궁금하신 점이 있으시다면 메일 보내주세요.</span>
+                <a href="mailto:dlfp0623@naver.com" class="display_flex flex_align_c" data-aos="fade-left" data-aos-delay="200">
+                    메일 보내기
+                    <img src="assets/icon/ico_arrow02.png" alt="화살표 아이콘">
+                </a>
+                <img src="assets/img/leaf2.png" alt="클로버 그림" class="deco_5">
+            </div>
+        </section> -->
+        
+    </main>
+    <!-- scroll top -->
+    <button type="button" class="scroll_top" id="scroll_top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- footer -->
+    <footer>
+        <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 만들어진 사이트입니다.</p>
+        <p>CHOEIYRE ⓒ 2025 PORTFOLIO</p>
+    </footer>
+
+
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/0e3bc4bb5b.js" crossorigin="anonymous"></script>
+    <script src="js/mein.js"></script>
+</body>
+</html>
